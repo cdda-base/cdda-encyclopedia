@@ -36,6 +36,7 @@ word-wrap: break-word; /*InternetExplorer5.5+*/  }
   <script type="text/javascript" src="js/lang/zh_CN.js"></script>  
   <script type="text/javascript">
     $(function () {
+	$("#Loading").remove();
      $('#title_info').append('<a href=javascript:select_tab("ItemSearch")>' + Tr("アイテム検索") + '</a>');
 	 $('#title_info').append(' ');
 	 $('#title_info').append('<a href=javascript:select_tab("MeleeList")>'+ Tr("近接武器リスト") + '</a>');
@@ -292,7 +293,7 @@ word-wrap: break-word; /*InternetExplorer5.5+*/  }
 </head>
 
 <body>
-
+<p id="Loading">Loading……</p>
   <div class="js-tab">
     <header class="js-tab-title">
                 <header id="title_info">
